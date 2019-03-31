@@ -1,0 +1,18 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>netstandard2.0</TargetFramework>
+        <RootNamespace>Basket.Core</RootNamespace>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <Reference Include="MongoDB.Bson, Version=2.9.0.0, Culture=neutral, PublicKeyToken=null">
+        <HintPath>..\..\..\.nuget\packages\mongodb.bson\2.9.0-beta1\lib\netstandard1.5\MongoDB.Bson.dll</HintPath>
+      </Reference>
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="MongoDB.Driver" Version="2.9.0-beta1" />
+    </ItemGroup>
+
+</Project>

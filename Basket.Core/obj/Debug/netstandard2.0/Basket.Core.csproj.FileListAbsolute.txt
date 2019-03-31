@@ -1,0 +1,9 @@
+/Users/onuryilmaz/Workspace/Basket/Basket.Core/bin/Debug/netstandard2.0/Basket.Core.deps.json
+/Users/onuryilmaz/Workspace/Basket/Basket.Core/bin/Debug/netstandard2.0/Basket.Core.dll
+/Users/onuryilmaz/Workspace/Basket/Basket.Core/bin/Debug/netstandard2.0/Basket.Core.pdb
+/Users/onuryilmaz/Workspace/Basket/Basket.Core/obj/Debug/netstandard2.0/Basket.Core.csprojAssemblyReference.cache
+/Users/onuryilmaz/Workspace/Basket/Basket.Core/obj/Debug/netstandard2.0/Basket.Core.csproj.CoreCompileInputs.cache
+/Users/onuryilmaz/Workspace/Basket/Basket.Core/obj/Debug/netstandard2.0/Basket.Core.AssemblyInfoInputs.cache
+/Users/onuryilmaz/Workspace/Basket/Basket.Core/obj/Debug/netstandard2.0/Basket.Core.AssemblyInfo.cs
+/Users/onuryilmaz/Workspace/Basket/Basket.Core/obj/Debug/netstandard2.0/Basket.Core.dll
+/Users/onuryilmaz/Workspace/Basket/Basket.Core/obj/Debug/netstandard2.0/Basket.Core.pdb

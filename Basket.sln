@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Basket.Api", "Basket.Api\Basket.Api.csproj", "{6CE4467B-8C54-415E-8971-6386726CF874}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Basket.Core", "Basket.Core\Basket.Core.csproj", "{9348ADA1-6BD7-41B1-BD69-D564C9E6B390}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Basket.UnitTest", "Basket.UnitTest\Basket.UnitTest.csproj", "{824B509B-EC6F-4A9B-9AEC-F75B9792FE23}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6CE4467B-8C54-415E-8971-6386726CF874}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6CE4467B-8C54-415E-8971-6386726CF874}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6CE4467B-8C54-415E-8971-6386726CF874}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6CE4467B-8C54-415E-8971-6386726CF874}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9348ADA1-6BD7-41B1-BD69-D564C9E6B390}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9348ADA1-6BD7-41B1-BD69-D564C9E6B390}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9348ADA1-6BD7-41B1-BD69-D564C9E6B390}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9348ADA1-6BD7-41B1-BD69-D564C9E6B390}.Release|Any CPU.Build.0 = Release|Any CPU
+		{824B509B-EC6F-4A9B-9AEC-F75B9792FE23}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{824B509B-EC6F-4A9B-9AEC-F75B9792FE23}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{824B509B-EC6F-4A9B-9AEC-F75B9792FE23}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{824B509B-EC6F-4A9B-9AEC-F75B9792FE23}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

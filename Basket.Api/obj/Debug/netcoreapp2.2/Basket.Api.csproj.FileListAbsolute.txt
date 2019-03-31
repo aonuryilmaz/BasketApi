@@ -1,0 +1,17 @@
+/Users/onuryilmaz/Workspace/Basket/Basket.Api/bin/Debug/netcoreapp2.2/Basket.Api.deps.json
+/Users/onuryilmaz/Workspace/Basket/Basket.Api/bin/Debug/netcoreapp2.2/Basket.Api.runtimeconfig.json
+/Users/onuryilmaz/Workspace/Basket/Basket.Api/bin/Debug/netcoreapp2.2/Basket.Api.runtimeconfig.dev.json
+/Users/onuryilmaz/Workspace/Basket/Basket.Api/bin/Debug/netcoreapp2.2/Basket.Api.dll
+/Users/onuryilmaz/Workspace/Basket/Basket.Api/bin/Debug/netcoreapp2.2/Basket.Api.pdb
+/Users/onuryilmaz/Workspace/Basket/Basket.Api/bin/Debug/netcoreapp2.2/Basket.Core.dll
+/Users/onuryilmaz/Workspace/Basket/Basket.Api/bin/Debug/netcoreapp2.2/Basket.Core.pdb
+/Users/onuryilmaz/Workspace/Basket/Basket.Api/obj/Debug/netcoreapp2.2/Basket.Api.csprojAssemblyReference.cache
+/Users/onuryilmaz/Workspace/Basket/Basket.Api/obj/Debug/netcoreapp2.2/Basket.Api.csproj.CoreCompileInputs.cache
+/Users/onuryilmaz/Workspace/Basket/Basket.Api/obj/Debug/netcoreapp2.2/Basket.Api.RazorAssemblyInfo.cache
+/Users/onuryilmaz/Workspace/Basket/Basket.Api/obj/Debug/netcoreapp2.2/Basket.Api.RazorAssemblyInfo.cs
+/Users/onuryilmaz/Workspace/Basket/Basket.Api/obj/Debug/netcoreapp2.2/Basket.Api.AssemblyInfoInputs.cache
+/Users/onuryilmaz/Workspace/Basket/Basket.Api/obj/Debug/netcoreapp2.2/Basket.Api.AssemblyInfo.cs
+/Users/onuryilmaz/Workspace/Basket/Basket.Api/obj/Debug/netcoreapp2.2/Basket.Api.RazorTargetAssemblyInfo.cache
+/Users/onuryilmaz/Workspace/Basket/Basket.Api/obj/Debug/netcoreapp2.2/Basket.Api.csproj.CopyComplete
+/Users/onuryilmaz/Workspace/Basket/Basket.Api/obj/Debug/netcoreapp2.2/Basket.Api.dll
+/Users/onuryilmaz/Workspace/Basket/Basket.Api/obj/Debug/netcoreapp2.2/Basket.Api.pdb
