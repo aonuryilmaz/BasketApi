@@ -9,6 +9,11 @@ function build {
     EXIT_CODE=$?
 }
 
+function removeDanglingImage {
+    docker rmi -f $(docker images -q -f dangling=true)
+}
+
+removeDanglingImage
 build
 
 if [ $EXIT_CODE -ne 0 ]; then

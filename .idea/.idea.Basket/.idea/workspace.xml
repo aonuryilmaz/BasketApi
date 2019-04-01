@@ -1,7 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="61bcdb29-c9e9-4fc2-a7be-4d46d431110b" name="Default Changelist" comment="" />
+    <list default="true" id="61bcdb29-c9e9-4fc2-a7be-4d46d431110b" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Basket/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Basket/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Basket.Api/Startup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Basket.Api/Startup.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Basket.Api/bin/Debug/netcoreapp2.2/Basket.Api.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Basket.Api/bin/Debug/netcoreapp2.2/Basket.Api.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Basket.Api/bin/Debug/netcoreapp2.2/Basket.Api.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Basket.Api/bin/Debug/netcoreapp2.2/Basket.Api.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Basket.Api/obj/Debug/netcoreapp2.2/Basket.Api.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Basket.Api/obj/Debug/netcoreapp2.2/Basket.Api.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Basket.Api/obj/Debug/netcoreapp2.2/Basket.Api.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Basket.Api/obj/Debug/netcoreapp2.2/Basket.Api.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Basket.UnitTest/bin/Debug/netcoreapp2.2/Basket.Api.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Basket.UnitTest/bin/Debug/netcoreapp2.2/Basket.Api.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Basket.UnitTest/bin/Debug/netcoreapp2.2/Basket.Api.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Basket.UnitTest/bin/Debug/netcoreapp2.2/Basket.Api.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.sh" beforeDir="false" afterPath="$PROJECT_DIR$/build.sh" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,25 +74,25 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Basket.Api/Startup.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="508">
-              <caret line="55" column="69" selection-start-line="55" selection-start-column="69" selection-end-line="55" selection-end-column="69" />
+            <state relative-caret-position="316">
+              <caret line="44" lean-forward="true" selection-start-line="44" selection-end-line="44" />
               <folding>
-                <marker date="1554133739063" expanded="false" signature="6:671" ph="..." />
-                <marker date="1554133739063" expanded="true" signature="693:3466" ph="{...}" />
-                <marker date="1554133739063" expanded="true" signature="720:3464" ph="{...}" />
-                <marker date="1554133739063" expanded="true" signature="774:1056" ph="{...}" />
-                <marker date="1554133739063" expanded="true" signature="1279:1993" ph="{...}" />
-                <marker date="1554133739063" expanded="true" signature="1526:1643" ph="{...}" />
-                <marker date="1554133739063" expanded="true" signature="2064:2610" ph="{...}" />
-                <marker date="1554133739063" expanded="true" signature="2124:2312" ph="{...}" />
-                <marker date="1554133739063" expanded="true" signature="2365:2598" ph="{...}" />
-                <marker date="1554133739063" expanded="true" signature="2806:3458" ph="{...}" />
-                <marker date="1554133739063" expanded="true" signature="2853:2930" ph="{...}" />
-                <marker date="1554133739063" expanded="true" signature="2947:3167" ph="{...}" />
-                <marker date="1554133739063" expanded="true" signature="3232:3336" ph="{...}" />
+                <marker date="1554146851043" expanded="false" signature="6:704" ph="..." />
+                <marker date="1554146851043" expanded="true" signature="726:3568" ph="{...}" />
+                <marker date="1554146851043" expanded="true" signature="753:3566" ph="{...}" />
+                <marker date="1554146851043" expanded="true" signature="807:1089" ph="{...}" />
+                <marker date="1554146851043" expanded="true" signature="1312:2095" ph="{...}" />
+                <marker date="1554146851043" expanded="true" signature="1559:1676" ph="{...}" />
+                <marker date="1554146851043" expanded="true" signature="2166:2712" ph="{...}" />
+                <marker date="1554146851043" expanded="true" signature="2226:2414" ph="{...}" />
+                <marker date="1554146851043" expanded="true" signature="2467:2700" ph="{...}" />
+                <marker date="1554146851043" expanded="true" signature="2908:3560" ph="{...}" />
+                <marker date="1554146851043" expanded="true" signature="2955:3032" ph="{...}" />
+                <marker date="1554146851043" expanded="true" signature="3049:3269" ph="{...}" />
+                <marker date="1554146851043" expanded="true" signature="3334:3438" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -123,7 +133,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Basket.UnitTest/BasketServiceTest/When_adding_non_exist_product_to_basket.cs">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="264">
@@ -310,7 +320,6 @@
         <option value="$PROJECT_DIR$/BasketUnitTest/UnitTest1.cs" />
         <option value="$PROJECT_DIR$/Basket.UnitTest/BasketService/When_getting_or_creating_basket.cs" />
         <option value="$PROJECT_DIR$/Basket.UnitTest/ProductService/When_decreasing_product_stock.cs" />
-        <option value="$PROJECT_DIR$/Basket.Api/Startup.cs" />
         <option value="$PROJECT_DIR$/Basket.Core/Repositories/ProductRepository.cs" />
         <option value="$PROJECT_DIR$/Basket.Core/Domain/Repositories/IUserRepository.cs" />
         <option value="$PROJECT_DIR$/Basket.Core/Repositories/UserRepository.cs" />
@@ -330,6 +339,7 @@
         <option value="$PROJECT_DIR$/Basket.UnitTest/BasketServiceTest/When_adding_baskektitem_to_basket.cs" />
         <option value="$PROJECT_DIR$/Basket.UnitTest/BasketServiceTest/When_adding_not_in_stock_product_to_basket.cs" />
         <option value="$PROJECT_DIR$/Basket.UnitTest/BasketServiceTest/When_adding_non_exist_product_to_basket.cs" />
+        <option value="$PROJECT_DIR$/Basket.Api/Startup.cs" />
       </list>
     </option>
   </component>
@@ -355,6 +365,11 @@
             <path>
               <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
               <item name="Basket" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+            <path>
+              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="Basket" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Basket.Api" type="24d0babc:SolutionExplorerModelNode" />
             </path>
           </expand>
           <select />
@@ -407,12 +422,12 @@
       <workItem from="1553882445634" duration="4217000" />
       <workItem from="1553930553128" duration="29403000" />
       <workItem from="1554025215193" duration="11527000" />
-      <workItem from="1554133464313" duration="10581000" />
+      <workItem from="1554133464313" duration="10827000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="55728000" />
+    <option name="totallyTimeSpent" value="55974000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -426,14 +441,14 @@
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21489622" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21489622" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Capture Tool" order="3" />
       <window_info id="Favorites" order="4" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32959184" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32959184" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4010204" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -442,7 +457,7 @@
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="bottom" id="Database Changes" order="10" />
-      <window_info anchor="bottom" id="Unit Tests" order="11" visible="true" weight="0.32959184" />
+      <window_info anchor="bottom" id="Unit Tests" order="11" weight="0.32959184" />
       <window_info anchor="bottom" id="Terminal" order="12" />
       <window_info anchor="bottom" id="Event Log" order="13" side_tool="true" />
       <window_info anchor="bottom" id="REST Client" order="14" />
@@ -904,28 +919,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Basket.Api/Startup.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="508">
-          <caret line="55" column="69" selection-start-line="55" selection-start-column="69" selection-end-line="55" selection-end-column="69" />
-          <folding>
-            <marker date="1554133739063" expanded="false" signature="6:671" ph="..." />
-            <marker date="1554133739063" expanded="true" signature="693:3466" ph="{...}" />
-            <marker date="1554133739063" expanded="true" signature="720:3464" ph="{...}" />
-            <marker date="1554133739063" expanded="true" signature="774:1056" ph="{...}" />
-            <marker date="1554133739063" expanded="true" signature="1279:1993" ph="{...}" />
-            <marker date="1554133739063" expanded="true" signature="1526:1643" ph="{...}" />
-            <marker date="1554133739063" expanded="true" signature="2064:2610" ph="{...}" />
-            <marker date="1554133739063" expanded="true" signature="2124:2312" ph="{...}" />
-            <marker date="1554133739063" expanded="true" signature="2365:2598" ph="{...}" />
-            <marker date="1554133739063" expanded="true" signature="2806:3458" ph="{...}" />
-            <marker date="1554133739063" expanded="true" signature="2853:2930" ph="{...}" />
-            <marker date="1554133739063" expanded="true" signature="2947:3167" ph="{...}" />
-            <marker date="1554133739063" expanded="true" signature="3232:3336" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Basket.Core/Domain/Models/Product.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="64">
@@ -1037,6 +1030,28 @@
             <marker date="1554144787277" expanded="true" signature="974:1225" ph="{...}" />
             <marker date="1554144787277" expanded="true" signature="1301:1479" ph="{...}" />
             <marker date="1554144787277" expanded="true" signature="1525:1787" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Basket.Api/Startup.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="316">
+          <caret line="44" lean-forward="true" selection-start-line="44" selection-end-line="44" />
+          <folding>
+            <marker date="1554146851043" expanded="false" signature="6:704" ph="..." />
+            <marker date="1554146851043" expanded="true" signature="726:3568" ph="{...}" />
+            <marker date="1554146851043" expanded="true" signature="753:3566" ph="{...}" />
+            <marker date="1554146851043" expanded="true" signature="807:1089" ph="{...}" />
+            <marker date="1554146851043" expanded="true" signature="1312:2095" ph="{...}" />
+            <marker date="1554146851043" expanded="true" signature="1559:1676" ph="{...}" />
+            <marker date="1554146851043" expanded="true" signature="2166:2712" ph="{...}" />
+            <marker date="1554146851043" expanded="true" signature="2226:2414" ph="{...}" />
+            <marker date="1554146851043" expanded="true" signature="2467:2700" ph="{...}" />
+            <marker date="1554146851043" expanded="true" signature="2908:3560" ph="{...}" />
+            <marker date="1554146851043" expanded="true" signature="2955:3032" ph="{...}" />
+            <marker date="1554146851043" expanded="true" signature="3049:3269" ph="{...}" />
+            <marker date="1554146851043" expanded="true" signature="3334:3438" ph="{...}" />
           </folding>
         </state>
       </provider>

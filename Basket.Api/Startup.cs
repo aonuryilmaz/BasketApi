@@ -6,6 +6,7 @@ using Basket.Api.Config;
 using Basket.Api.Middleware;
 using Basket.Api.Models;
 using Basket.Api.Services;
+using Basket.Core.Domain.Models;
 using Basket.Core.Domain.Repositories;
 using Basket.Core.Repositories;
 using Microsoft.AspNetCore.Builder;
@@ -46,11 +47,12 @@ namespace Basket.Api
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "My API" ,Version = "V1"});
             });
-            services.AddScoped<IUserRepository,UserRepository>();
-            services.AddScoped<IProductRepository,ProductRepository>();
-            services.AddScoped<IBasketRepository,BasketRepository>();
+            services.AddTransient<IUserRepository,UserRepository>();
+            services.AddTransient<IProductRepository,ProductRepository>();
+            services.AddTransient<IBasketRepository,BasketRepository>();
             services.AddScoped<IBasketService,BasketService>();
             services.AddScoped<IProductService,ProductService>();
+            services.AddScoped<IUserService,UserService>();
         }
 
         private void ConfigurationMongoDb(IServiceCollection service)
