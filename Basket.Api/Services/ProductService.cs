@@ -3,7 +3,7 @@ using System.Threading.Tasks;
 using Basket.Core.Domain.Models;
 using Basket.Core.Domain.Repositories;
 
-namespace Basket.Core.Services
+namespace Basket.Api.Services
 {
     public class ProductService:IProductService
     {
@@ -20,6 +20,20 @@ namespace Basket.Core.Services
             }
             product.InStock = product.InStock - quantity;
             await _productRepository.Update(product);
+        }
+
+        public async Task CreateProduct(Product product)
+        {
+            if (!await IsExist(product.Sku))
+            {
+                throw new Exception("Product is already created");
+            }
+            await _productRepository.Create(product);
+        }
+
+        private async Task<bool> IsExist(string sku)
+        {
+            return await _productRepository.GetProductBySku(sku) != null;
         }
     }
 }

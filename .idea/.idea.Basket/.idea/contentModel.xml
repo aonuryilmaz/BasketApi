@@ -39,6 +39,14 @@
         <e p="Properties" t="Include">
           <e p="launchSettings.json" t="Include" />
         </e>
+        <e p="Services" t="Include">
+          <e p="BasketService.cs" t="Include" />
+          <e p="IBasketService.cs" t="Include" />
+          <e p="IProductService.cs" t="Include" />
+          <e p="IUserService.cs" t="Include" />
+          <e p="ProductService.cs" t="Include" />
+          <e p="UserService.cs" t="Include" />
+        </e>
         <e p="Startup.cs" t="Include" />
       </e>
       <e p="Basket.Core" t="IncludeRecursive">
@@ -70,17 +78,19 @@
           <e p="ProductRepository.cs" t="Include" />
           <e p="UserRepository.cs" t="Include" />
         </e>
-        <e p="Services" t="Include">
-          <e p="BasketService.cs" t="Include" />
-          <e p="IBasketService.cs" t="Include" />
-          <e p="IProductService.cs" t="Include" />
-          <e p="ProductService.cs" t="Include" />
-        </e>
       </e>
       <e p="Basket.sln" t="IncludeFlat" />
       <e p="Basket.UnitTest" t="IncludeRecursive">
         <e p="Basket.UnitTest.csproj" t="IncludeRecursive" />
+        <e p="BasketServiceTest" t="Include">
+          <e p="When_adding_in_stokc_product_to_basket.cs" t="Include" />
+          <e p="When_adding_non_exist_product_to_basket.cs" t="Include" />
+          <e p="When_adding_not_in_stock_product_to_basket.cs" t="Include" />
+        </e>
         <e p="bin" t="ExcludeRecursive" />
+        <e p="Builders" t="Include">
+          <e p="ProductBuilder.cs" t="Include" />
+        </e>
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">
             <e p="netcoreapp2.2" t="Include">
@@ -89,7 +99,6 @@
             </e>
           </e>
         </e>
-        <e p="UnitTest1.cs" t="Include" />
       </e>
       <e p="packages" t="ExcludeRecursive" />
     </e>

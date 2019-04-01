@@ -1,5 +1,6 @@
 using System.Threading.Tasks;
 using Basket.Api.Models;
+using Basket.Api.Services;
 using Basket.Core.Domain.Models;
 using Basket.Core.Domain.Repositories;
 using Microsoft.AspNetCore.Mvc;
@@ -9,10 +10,10 @@ namespace Basket.Api.Controllers
     [Route("Product")]
     public class ProductController:ControllerBase
     {
-        private readonly IProductRepository _productRepository;
-        public ProductController(IProductRepository productRepository)
+        private readonly IProductService _productService;
+        public ProductController(IProductRepository productRepository, IProductService productService)
         {
-            _productRepository = productRepository;
+            _productService = productService;
         }
 
         [HttpPost]
@@ -25,7 +26,7 @@ namespace Basket.Api.Controllers
                 model.UnitPrice,
                 model.InStock
             );
-            await _productRepository.Create(product);
+            await _productService.CreateProduct(product);
             return Ok(product);
         }
     }

@@ -6,7 +6,7 @@ namespace Basket.Core.Domain.Repositories
 {
     public interface IUserRepository
     {
-        Task<User> GetUserByEmail(string email);
+        Task<User> Get(string email);
         Task Create(User user);
     }
 }

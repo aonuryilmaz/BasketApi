@@ -3,9 +3,9 @@ using System.Linq;
 using System.Net;
 using System.Threading.Tasks;
 using Basket.Api.Models;
+using Basket.Api.Services;
 using Basket.Core.Domain.Models;
 using Basket.Core.Domain.Repositories;
-using Basket.Core.Services;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Internal;
 using Microsoft.AspNetCore.Mvc;
@@ -17,46 +17,32 @@ namespace Basket.Api.Controllers
     public class BasketController:ControllerBase
     {
         private readonly IBasketService _basketService;
-        private readonly IUserRepository _userRepository;
+        private readonly IUserService _userService;
         private readonly IProductRepository _productRepository;
         private readonly IProductService _productService;
         public BasketController(
-            IUserRepository userRepository, 
             IProductRepository productRepository, 
             IBasketService basketService, 
-            IProductService productService)
+            IProductService productService, IUserService userService)
         {
-            _userRepository = userRepository;
             _productRepository = productRepository;
             _basketService = basketService;
             _productService = productService;
+            _userService = userService;
         }
         // POST api/values
         [HttpPost]
-        public async Task<IActionResult> AddToBasket([FromBody]AddToBasketItemRequestModel model)
+        public async Task<IActionResult> Add([FromBody]AddToBasketItemRequestModel model)
         {
-            var user = await _userRepository.GetUserByEmail(model.UserEmail);
+            var user = await _userService.GetUserByEmail(model.Email);
             if (user==null)
             {
                 return BadRequest("User not found");
             }
-            
-            var basket = await _basketService.GetOrCreateBasket(user.Id);
-            var product = await _productRepository.GetProductBySku(model.Sku);
-            if (!IsAvailableStock(product,model.Quantity))
-            {
-                return BadRequest("Product stock is not available");
-            }
-            
-            var basketItem = BasketItem.FromProduct(product,model.Quantity);
-            await _basketService.AddToBasket(basket,basketItem);
-            await _productService.DecreaseStock(product, model.Quantity);
+
+            await _basketService.AddToBasket(user.Id, model.Sku, model.Quantity);
             return Ok();
         }
-
-        private bool IsAvailableStock(Product product, int quantity)
-        {
-            return product.InStock >= quantity;
-        }
+        
     }
 }

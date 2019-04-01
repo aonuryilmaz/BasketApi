@@ -14,7 +14,14 @@
     ],
     "frameworks": {
       "netcoreapp2.2": {
-        "projectReferences": {}
+        "projectReferences": {
+          "/Users/onuryilmaz/Workspace/Basket/Basket.Api/Basket.Api.csproj": {
+            "projectPath": "/Users/onuryilmaz/Workspace/Basket/Basket.Api/Basket.Api.csproj"
+          },
+          "/Users/onuryilmaz/Workspace/Basket/Basket.Core/Basket.Core.csproj": {
+            "projectPath": "/Users/onuryilmaz/Workspace/Basket/Basket.Core/Basket.Core.csproj"
+          }
+        }
       }
     },
     "warningProperties": {
@@ -26,6 +33,10 @@
   "frameworks": {
     "netcoreapp2.2": {
       "dependencies": {
+        "FluentAssertions": {
+          "target": "Package",
+          "version": "[5.6.0, )"
+        },
         "Microsoft.NET.Test.Sdk": {
           "target": "Package",
           "version": "[15.9.0, )"
@@ -35,6 +46,10 @@
           "target": "Package",
           "version": "[2.2.0, )",
           "autoReferenced": true
+        },
+        "Moq": {
+          "target": "Package",
+          "version": "[4.10.1, )"
         },
         "NUnit3TestAdapter": {
           "target": "Package",

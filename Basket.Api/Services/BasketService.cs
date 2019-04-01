@@ -4,7 +4,7 @@ using System.Threading.Tasks;
 using Basket.Core.Domain.Models;
 using Basket.Core.Domain.Repositories;
 
-namespace Basket.Core.Services
+namespace Basket.Api.Services
 {
     public class BasketService:IBasketService
     {
@@ -15,9 +15,24 @@ namespace Basket.Core.Services
             _productRepository = productRepository;
             _basketRepository = basketRepository;
         }
+        public async Task AddToBasket(Guid userId, string sku, int quantity)
+        {
+            var basket = await GetOrCreateBasket(userId);
+            var product = await _productRepository.GetProductBySku(sku);
+            if (product == null)
+            {
+                throw new Exception("Product was not found");
+            }
 
+            if (!IsInStock(product,quantity))
+            {
+                throw new Exception("Product is not in stock");
+            }
 
-        public async Task<CustomerBasket> GetOrCreateBasket(Guid userId)
+            var basketItem = BasketItem.FromProduct(product);
+            AddBasketItemToBasket(basket, basketItem);
+        }    
+        private async Task<CustomerBasket> GetOrCreateBasket(Guid userId)
         {
             var basket = await _basketRepository.GetBasketByUserId(userId);
             if (basket==null)
@@ -29,10 +44,12 @@ namespace Basket.Core.Services
 
             return basket;
         }
-
-        public async Task AddToBasket(CustomerBasket customerBasket,BasketItem basketItem)
+        private bool IsInStock(Product product, int quantity)
         {
-            var basket = await _basketRepository.GetBasketByBasketId(customerBasket.Id);
+            return product.InStock >= quantity;
+        }
+        private async void AddBasketItemToBasket(CustomerBasket basket,BasketItem basketItem)
+        {
             var item = basket.ItemList.FirstOrDefault(f => f.Sku == basketItem.Sku);
             if (item!=null)
             {

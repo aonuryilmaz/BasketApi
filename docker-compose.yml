@@ -10,7 +10,7 @@ services:
       - 8081:8081
     depends_on:
       - mongo
-  basket-api:
+  basket-app:
     image: basket-api
     ports:
       - 5000:80

@@ -17,7 +17,7 @@ namespace Basket.Core.Repositories
             _database = database;
         }
 
-        public async Task<User> GetUserByEmail(string email)
+        public async Task<User> Get(string email)
         {
             return await Collection
                 .AsQueryable()

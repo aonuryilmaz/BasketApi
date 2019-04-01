@@ -1,5 +1,6 @@
 using System.Threading.Tasks;
 using Basket.Api.Models;
+using Basket.Api.Services;
 using Basket.Core.Domain.Models;
 using Basket.Core.Domain.Repositories;
 using Microsoft.AspNetCore.Mvc;
@@ -9,10 +10,10 @@ namespace Basket.Api.Controllers
     [Route("User")]
     public class UserController:ControllerBase
     {
-        private readonly IUserRepository _userRepository;
-        public UserController(IUserRepository userRepository)
+        private readonly IUserService _userService;
+        public UserController(IUserRepository userRepository, IUserService userService)
         {
-            _userRepository = userRepository;
+            _userService = userService;
         }
         
         [HttpPost]
@@ -23,13 +24,13 @@ namespace Basket.Api.Controllers
                 return BadRequest();
             }
 
-            var user = await _userRepository.GetUserByEmail(model.Email);
+            var user = await _userService.GetUserByEmail(model.Email);
             if (user!=null)
             {
                 return BadRequest("User already exist");
             }
             
-            await _userRepository.Create(new User(model.Email));
+            await _userService.CreateUser(model.Email);
             return Ok();
         }
     }
