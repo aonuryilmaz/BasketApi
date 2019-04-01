@@ -1,50 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="61bcdb29-c9e9-4fc2-a7be-4d46d431110b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Basket.Api/Services/IUserService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Basket.Api/Services/UserService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Basket.UnitTest/BasketServiceTest/When_adding_non_exist_product_to_basket.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Basket.UnitTest/BasketServiceTest/When_adding_not_in_stock_product_to_basket.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Basket.UnitTest/Builders/ProductBuilder.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Basket/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Basket/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Basket/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Basket/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Basket.Api/Controllers/BasketController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Basket.Api/Controllers/BasketController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Basket.Api/Controllers/ProductController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Basket.Api/Controllers/ProductController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Basket.Api/Controllers/UserController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Basket.Api/Controllers/UserController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Basket.Api/Models/AddToBasketItemRequestModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Basket.Api/Models/AddToBasketItemRequestModel.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Basket.Api/Startup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Basket.Api/Startup.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Basket.Api/bin/Debug/netcoreapp2.2/Basket.Api.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Basket.Api/bin/Debug/netcoreapp2.2/Basket.Api.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Basket.Api/bin/Debug/netcoreapp2.2/Basket.Api.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Basket.Api/bin/Debug/netcoreapp2.2/Basket.Api.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Basket.Api/bin/Debug/netcoreapp2.2/Basket.Core.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Basket.Api/bin/Debug/netcoreapp2.2/Basket.Core.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Basket.Api/bin/Debug/netcoreapp2.2/Basket.Core.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Basket.Api/bin/Debug/netcoreapp2.2/Basket.Core.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Basket.Api/obj/Debug/netcoreapp2.2/Basket.Api.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Basket.Api/obj/Debug/netcoreapp2.2/Basket.Api.csproj.CoreCompileInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Basket.Api/obj/Debug/netcoreapp2.2/Basket.Api.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Basket.Api/obj/Debug/netcoreapp2.2/Basket.Api.csprojAssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Basket.Api/obj/Debug/netcoreapp2.2/Basket.Api.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Basket.Api/obj/Debug/netcoreapp2.2/Basket.Api.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Basket.Api/obj/Debug/netcoreapp2.2/Basket.Api.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Basket.Api/obj/Debug/netcoreapp2.2/Basket.Api.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Basket.Core/Domain/Repositories/IUserRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Basket.Core/Domain/Repositories/IUserRepository.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Basket.Core/Repositories/UserRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Basket.Core/Repositories/UserRepository.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Basket.Core/Services/BasketService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Basket.Api/Services/BasketService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Basket.Core/Services/IBasketService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Basket.Api/Services/IBasketService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Basket.Core/Services/IProductService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Basket.Api/Services/IProductService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Basket.Core/Services/ProductService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Basket.Api/Services/ProductService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Basket.Core/bin/Debug/netstandard2.0/Basket.Core.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Basket.Core/bin/Debug/netstandard2.0/Basket.Core.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Basket.Core/bin/Debug/netstandard2.0/Basket.Core.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Basket.Core/bin/Debug/netstandard2.0/Basket.Core.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Basket.Core/obj/Debug/netstandard2.0/Basket.Core.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Basket.Core/obj/Debug/netstandard2.0/Basket.Core.csproj.CoreCompileInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Basket.Core/obj/Debug/netstandard2.0/Basket.Core.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Basket.Core/obj/Debug/netstandard2.0/Basket.Core.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Basket.Core/obj/Debug/netstandard2.0/Basket.Core.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Basket.Core/obj/Debug/netstandard2.0/Basket.Core.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Basket.UnitTest/Basket.UnitTest.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Basket.UnitTest/Basket.UnitTest.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Basket.UnitTest/UnitTest1.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Basket.UnitTest/obj/Basket.UnitTest.csproj.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Basket.UnitTest/obj/Basket.UnitTest.csproj.nuget.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Basket.UnitTest/obj/Basket.UnitTest.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/Basket.UnitTest/obj/Basket.UnitTest.csproj.nuget.g.props" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Basket.UnitTest/obj/Debug/netcoreapp2.2/Basket.UnitTest.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Basket.UnitTest/obj/Debug/netcoreapp2.2/Basket.UnitTest.assets.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Basket.UnitTest/obj/Debug/netcoreapp2.2/Basket.UnitTest.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Basket.UnitTest/obj/Debug/netcoreapp2.2/Basket.UnitTest.csprojAssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Basket.UnitTest/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/Basket.UnitTest/obj/project.assets.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Basket.UnitTest/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/Basket.UnitTest/obj/project.packagespec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Basket.sln.DotSettings.user" beforeDir="false" afterPath="$PROJECT_DIR$/Basket.sln.DotSettings.user" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
-    </list>
+    <list default="true" id="61bcdb29-c9e9-4fc2-a7be-4d46d431110b" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

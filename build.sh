@@ -5,10 +5,7 @@ NC='\033[0m' # No Color
 
 function build {
     echo "building..."
-    docker build \
-    --tag basket-app
-    .
-
+    docker build -t basket-app .
     EXIT_CODE=$?
 }
 
