@@ -8,5 +8,6 @@ namespace Basket.Api.Services
     {
         Task DecreaseStock(Product product, int quantity);
         Task CreateProduct(Product product);
+        Task<Product> GetProductBySku(string sku);
     }
 }

@@ -6,6 +6,6 @@ namespace Basket.Api.Services
 {
     public interface IBasketService
     {
-        Task AddToBasket(Guid userId, string sku, int quantity);
+        Task<CustomerBasket> AddToBasket(Guid userId, string sku, int quantity);
     }
 }

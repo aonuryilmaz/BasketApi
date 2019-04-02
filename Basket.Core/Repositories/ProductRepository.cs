@@ -13,7 +13,7 @@ namespace Basket.Core.Repositories
         {
             _database = database;
         }
-        public async Task<Product> GetProductBySku(string sku)
+        public async Task<Product> Get(string sku)
         {
             return await Collection
                 .AsQueryable()

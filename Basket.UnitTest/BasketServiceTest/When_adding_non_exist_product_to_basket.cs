@@ -13,7 +13,7 @@ namespace Basket.UnitTest.BasketServiceTest
     public class When_adding_non_exist_product_to_basket
     {
         private readonly Mock<IBasketRepository> _basketRepository = new Mock<IBasketRepository>();
-        private readonly Mock<IProductRepository> _productRepository = new Mock<IProductRepository>();
+        private readonly Mock<IProductService> _productService = new Mock<IProductService>();
         private BasketService _basketService;
         private readonly Guid userId = new Guid("93648BFC-1A27-40F0-A707-F567F337EFC7");
         private Product _product;
@@ -27,15 +27,15 @@ namespace Basket.UnitTest.BasketServiceTest
         public void OneTimeSetup()
         {
             CreateProduct();
-            _productRepository.Setup(x => x.GetProductBySku(sku)).Returns(Task.FromResult(_product));
-            _basketService=new BasketService(_productRepository.Object, _basketRepository.Object);
+            _productService.Setup(x => x.GetProductBySku(sku)).Returns(Task.FromResult(_product));
+            _basketService=new BasketService(_productService.Object, _basketRepository.Object);
 
         }
 
         [Test]
-        public void basket_service_should_throw_exception()
+        public void basket_service_should_throw_exception_product_was_not_found()
         {
-            var message= _basketService.AddToBasket(userId, "non-exist", 4).Exception.Message;
+            var message= _basketService.AddToBasket(userId, "non-exist", 4).Exception?.Message;
             message.Should().Contain("Product was not found");
         }
         

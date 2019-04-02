@@ -9,28 +9,23 @@ namespace Basket.Api.Services
     public class BasketService:IBasketService
     {
         private readonly IBasketRepository _basketRepository;
-        private readonly IProductRepository _productRepository;
-        public BasketService(IProductRepository productRepository, IBasketRepository basketRepository)
+        private readonly IProductService _productService;
+        public BasketService(IProductService productService, IBasketRepository basketRepository)
         {
-            _productRepository = productRepository;
+            _productService = productService;
             _basketRepository = basketRepository;
         }
-        public async Task AddToBasket(Guid userId, string sku, int quantity)
+        public async Task<CustomerBasket> AddToBasket(Guid userId, string sku, int quantity)
         {
             var basket = await GetOrCreateBasket(userId);
-            var product = await _productRepository.GetProductBySku(sku);
+            var product = await _productService.GetProductBySku(sku);
             if (product == null)
             {
                 throw new Exception("Product was not found");
             }
-
-            if (!IsInStock(product,quantity))
-            {
-                throw new Exception("Product is not in stock");
-            }
-
-            var basketItem = BasketItem.FromProduct(product);
-            AddBasketItemToBasket(basket, basketItem);
+            var basketItem = BasketItem.FromProduct(product,quantity);
+            await _productService.DecreaseStock(product, quantity);
+            return await AddBasketItemToBasket(basket, basketItem);
         }    
         private async Task<CustomerBasket> GetOrCreateBasket(Guid userId)
         {
@@ -44,11 +39,7 @@ namespace Basket.Api.Services
 
             return basket;
         }
-        private bool IsInStock(Product product, int quantity)
-        {
-            return product.InStock >= quantity;
-        }
-        private async void AddBasketItemToBasket(CustomerBasket basket,BasketItem basketItem)
+        private async Task<CustomerBasket> AddBasketItemToBasket(CustomerBasket basket,BasketItem basketItem)
         {
             var item = basket.ItemList.FirstOrDefault(f => f.Sku == basketItem.Sku);
             if (item!=null)
@@ -61,6 +52,7 @@ namespace Basket.Api.Services
             }
 
             await _basketRepository.Update(basket);
+            return basket;
         }
     }
 }

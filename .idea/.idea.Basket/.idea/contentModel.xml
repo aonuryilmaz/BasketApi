@@ -83,9 +83,8 @@
       <e p="Basket.UnitTest" t="IncludeRecursive">
         <e p="Basket.UnitTest.csproj" t="IncludeRecursive" />
         <e p="BasketServiceTest" t="Include">
-          <e p="When_adding_in_stokc_product_to_basket.cs" t="Include" />
+          <e p="When_adding_in_stock_product_to_basket.cs" t="Include" />
           <e p="When_adding_non_exist_product_to_basket.cs" t="Include" />
-          <e p="When_adding_not_in_stock_product_to_basket.cs" t="Include" />
         </e>
         <e p="bin" t="ExcludeRecursive" />
         <e p="Builders" t="Include">
@@ -98,6 +97,9 @@
               <e p="Basket.UnitTest.Program.cs" t="Include" />
             </e>
           </e>
+        </e>
+        <e p="ProductServiceTest" t="Include">
+          <e p="When_decreasing_non_in_stock_product.cs" t="Include" />
         </e>
       </e>
       <e p="packages" t="ExcludeRecursive" />

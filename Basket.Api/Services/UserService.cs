@@ -14,13 +14,7 @@ namespace Basket.Api.Services
         }
         public async Task<User> GetUserByEmail(string email)
         {
-            var user = await _userRepository.Get(email);
-            if (user==null)
-            {
-                throw new Exception("User not found");
-            }
-
-            return user;
+            return await _userRepository.Get(email);
         }
 
         public async Task CreateUser(string email)

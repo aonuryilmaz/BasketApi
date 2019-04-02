@@ -16,7 +16,7 @@ namespace Basket.Api.Services
         {
             if (product.InStock < quantity)
             {
-                throw new Exception("Product stock is not available");
+                throw new Exception("Product is not in stock");
             }
             product.InStock = product.InStock - quantity;
             await _productRepository.Update(product);
@@ -24,16 +24,21 @@ namespace Basket.Api.Services
 
         public async Task CreateProduct(Product product)
         {
-            if (!await IsExist(product.Sku))
+            if (await IsExist(product.Sku))
             {
                 throw new Exception("Product is already created");
             }
             await _productRepository.Create(product);
         }
 
+        public async Task<Product> GetProductBySku(string sku)
+        {
+            return await _productRepository.Get(sku);
+        }
+
         private async Task<bool> IsExist(string sku)
         {
-            return await _productRepository.GetProductBySku(sku) != null;
+            return await _productRepository.Get(sku) != null;
         }
     }
 }

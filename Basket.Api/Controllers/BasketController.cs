@@ -18,16 +18,11 @@ namespace Basket.Api.Controllers
     {
         private readonly IBasketService _basketService;
         private readonly IUserService _userService;
-        private readonly IProductRepository _productRepository;
-        private readonly IProductService _productService;
         public BasketController(
-            IProductRepository productRepository, 
             IBasketService basketService, 
-            IProductService productService, IUserService userService)
+            IUserService userService)
         {
-            _productRepository = productRepository;
             _basketService = basketService;
-            _productService = productService;
             _userService = userService;
         }
         // POST api/values
@@ -40,8 +35,8 @@ namespace Basket.Api.Controllers
                 return BadRequest("User not found");
             }
 
-            await _basketService.AddToBasket(user.Id, model.Sku, model.Quantity);
-            return Ok();
+            var result=await _basketService.AddToBasket(user.Id, model.Sku, model.Quantity);
+            return Ok(result);
         }
         
     }

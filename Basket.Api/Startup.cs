@@ -50,9 +50,9 @@ namespace Basket.Api
             services.AddTransient<IUserRepository,UserRepository>();
             services.AddTransient<IProductRepository,ProductRepository>();
             services.AddTransient<IBasketRepository,BasketRepository>();
-            services.AddScoped<IBasketService,BasketService>();
-            services.AddScoped<IProductService,ProductService>();
-            services.AddScoped<IUserService,UserService>();
+            services.AddTransient<IBasketService,BasketService>();
+            services.AddTransient<IProductService,ProductService>();
+            services.AddTransient<IUserService,UserService>();
         }
 
         private void ConfigurationMongoDb(IServiceCollection service)
